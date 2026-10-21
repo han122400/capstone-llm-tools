@@ -1,0 +1,33 @@
+{
+  "prompt_version": "email-injection-choice-v3",
+  "review_version": "email-injection-jev-review-v2",
+  "prompt_bytes": 1554,
+  "input_limit_1024": 1006,
+  "input_size_checks": {
+    "development": {
+      "samples": 20,
+      "max_input_bytes": 851,
+      "all_within_limit": true
+    },
+    "evaluation": {
+      "samples": 100,
+      "max_input_bytes": 856,
+      "all_within_limit": true
+    }
+  },
+  "mock_execution": {
+    "development_mock_rows": 140,
+    "selected_configs": [
+      "foundation_sec",
+      "qwen",
+      "jev",
+      "foundation_sec_then_jev",
+      "qwen_then_jev"
+    ],
+    "all_success": true,
+    "physical_api_calls": 0,
+    "actual_model_calls": 0,
+    "temporary_database": true
+  },
+  "limitation": "Validates wiring and input limits only; no evidence of actual classification improvement."
+}

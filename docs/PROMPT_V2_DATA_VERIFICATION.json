@@ -1,0 +1,39 @@
+{
+  "verification": "PASS",
+  "data_counts": {
+    "evaluation": {
+      "NORMAL": 50,
+      "INJECTION": 50
+    },
+    "development": {
+      "NORMAL": 10,
+      "INJECTION": 10
+    }
+  },
+  "source_version": "fbdb08b129a476ca44cd95d597eb96d67106bfd5",
+  "source_file_sha256": "ed70ce117fc5916fe547d1e432e6a1be17763eb51ee15cdb4f36feb3af03d5b4",
+  "selected_configs": [
+    "foundation_sec",
+    "qwen",
+    "jev",
+    "foundation_sec_jev",
+    "qwen_jev"
+  ],
+  "mock_component_calls": 300,
+  "mock_results": 500,
+  "physical_api_calls": 0,
+  "real_models_called": false,
+  "user_catalog_runs_created": 0,
+  "checks": [
+    "original body equality",
+    "pair/family/scenario split isolation",
+    "input hash",
+    "content allowlist",
+    "CSV roundtrip",
+    "five configurations",
+    "Jev once per sample",
+    "immutable snapshot",
+    "DEMO isolation"
+  ],
+  "limits": "Does not validate actual inference, GPU, Gmail OAuth, MIME parsing, semantic gold-label correctness or upstream license permission."
+}
